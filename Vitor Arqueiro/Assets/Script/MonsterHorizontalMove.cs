@@ -111,8 +111,9 @@ public class MonsterHorizontalMove : MonoBehaviour
             //wall = Physics2D.OverlapCircle(wallCheck.position, 0.02f, wallCheckLayer);
             Vector3 dir = Vector3.right;
             dir.x = transform.localScale.x ;
-            wall = Physics2D.Raycast(wallCheck.gameObject.transform.position, dir, 0.1f, gameController.interacaoMaskInimigoHorizontal);
+            wall = Physics2D.Raycast(wallCheck.gameObject.transform.position, dir, 0.1f, wallCheckLayer);
             if(wall && !flip){
+                print("if(wall && !flip){");
                  StartCoroutine("Flip");
             }
              //Debug.Log("Update" + " dead" + dead);
@@ -123,10 +124,10 @@ public class MonsterHorizontalMove : MonoBehaviour
                 //rigidbody.velocity = new Vector2(transform.localScale.x, rigidbody.velocity.y);
                 rigidbody2d.velocity = new Vector2(move, rigidbody2d.velocity.y);
 
-                if (colidde || !isGround )
+                if (!isGround )
                 //if (colidde )
                 {
-
+//print("if (colidde || !isGround )");
                     if(!flip){
                         StartCoroutine("Flip");
                     }

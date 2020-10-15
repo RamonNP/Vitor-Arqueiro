@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2026229982610805995
 Transform:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1321555907
-  m_SortingLayer: 2
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 48bf2b2b3f548c14c91e5c2a777639fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -176,7 +176,7 @@ MonoBehaviour:
   explosion: {fileID: 189924315715678631, guid: 973cb1b7df02797449333891c35299f4, type: 3}
   wallCheckLayer:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 33280
 --- !u!1 &2026229983555494349
 GameObject:
   m_ObjectHideFlags: 0
