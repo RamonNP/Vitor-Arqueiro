@@ -1,0 +1,1264 @@
+fileFormatVersion: 2
+guid: a7a0dff3f67e239418fd85e7f135c17c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: TilemapFlorestaDecoracao.fw_0
+  - first:
+      213: 21300002
+    second: TilemapFlorestaDecoracao.fw_1
+  - first:
+      213: 21300004
+    second: TilemapFlorestaDecoracao.fw_2
+  - first:
+      213: 21300006
+    second: TilemapFlorestaDecoracao.fw_3
+  - first:
+      213: 21300008
+    second: TilemapFlorestaDecoracao.fw_4
+  - first:
+      213: 21300010
+    second: TilemapFlorestaDecoracao.fw_5
+  - first:
+      213: 21300012
+    second: TilemapFlorestaDecoracao.fw_6
+  - first:
+      213: 21300014
+    second: TilemapFlorestaDecoracao.fw_7
+  - first:
+      213: 21300016
+    second: TilemapFlorestaDecoracao.fw_8
+  - first:
+      213: 21300018
+    second: TilemapFlorestaDecoracao.fw_9
+  - first:
+      213: 21300020
+    second: TilemapFlorestaDecoracao.fw_10
+  - first:
+      213: 21300022
+    second: TilemapFlorestaDecoracao.fw_11
+  - first:
+      213: 21300024
+    second: TilemapFlorestaDecoracao.fw_12
+  - first:
+      213: 21300026
+    second: TilemapFlorestaDecoracao.fw_13
+  - first:
+      213: 21300028
+    second: TilemapFlorestaDecoracao.fw_14
+  - first:
+      213: 21300030
+    second: TilemapFlorestaDecoracao.fw_15
+  - first:
+      213: 21300032
+    second: TilemapFlorestaDecoracao.fw_16
+  - first:
+      213: 21300034
+    second: TilemapFlorestaDecoracao.fw_17
+  - first:
+      213: 21300036
+    second: TilemapFlorestaDecoracao.fw_18
+  - first:
+      213: 21300038
+    second: TilemapFlorestaDecoracao.fw_19
+  - first:
+      213: 21300040
+    second: TilemapFlorestaDecoracao.fw_20
+  - first:
+      213: 21300042
+    second: TilemapFlorestaDecoracao.fw_21
+  - first:
+      213: 21300044
+    second: TilemapFlorestaDecoracao.fw_22
+  - first:
+      213: 21300046
+    second: TilemapFlorestaDecoracao.fw_23
+  - first:
+      213: 21300048
+    second: TilemapFlorestaDecoracao.fw_24
+  - first:
+      213: 21300050
+    second: TilemapFlorestaDecoracao.fw_25
+  - first:
+      213: 21300052
+    second: TilemapFlorestaDecoracao.fw_26
+  - first:
+      213: 21300054
+    second: TilemapFlorestaDecoracao.fw_27
+  - first:
+      213: 21300056
+    second: TilemapFlorestaDecoracao.fw_28
+  - first:
+      213: 21300058
+    second: TilemapFlorestaDecoracao.fw_29
+  - first:
+      213: 21300060
+    second: TilemapFlorestaDecoracao.fw_30
+  - first:
+      213: 21300062
+    second: TilemapFlorestaDecoracao.fw_31
+  - first:
+      213: 21300064
+    second: TilemapFlorestaDecoracao.fw_32
+  - first:
+      213: 21300066
+    second: TilemapFlorestaDecoracao.fw_33
+  - first:
+      213: 21300068
+    second: TilemapFlorestaDecoracao.fw_35
+  - first:
+      213: 21300070
+    second: TilemapFlorestaDecoracao.fw_37
+  - first:
+      213: 21300072
+    second: TilemapFlorestaDecoracao.fw_38
+  - first:
+      213: 21300074
+    second: TilemapFlorestaDecoracao.fw_39
+  - first:
+      213: 21300076
+    second: TilemapFlorestaDecoracao.fw_40
+  - first:
+      213: 21300078
+    second: TilemapFlorestaDecoracao.fw_41
+  - first:
+      213: 21300080
+    second: TilemapFlorestaDecoracao.fw_42
+  - first:
+      213: 21300082
+    second: TilemapFlorestaDecoracao.fw_43
+  - first:
+      213: 21300084
+    second: TilemapFlorestaDecoracao.fw_44
+  - first:
+      213: 21300086
+    second: TilemapFlorestaDecoracao.fw_45
+  - first:
+      213: 21300088
+    second: TilemapFlorestaDecoracao.fw_46
+  - first:
+      213: 21300090
+    second: TilemapFlorestaDecoracao.fw_47
+  - first:
+      213: 21300092
+    second: TilemapFlorestaDecoracao.fw_48
+  - first:
+      213: 21300094
+    second: TilemapFlorestaDecoracao.fw_34
+  - first:
+      213: 21300096
+    second: TilemapFlorestaDecoracao.fw_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 915
+        width: 120
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaacc77da7756142bc51f84b7520c85
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 915
+        width: 116
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a9c3a45b7739542beb76e9db76c7fc
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_2
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 915
+        width: 118
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddb93d51dd65d5439301c29e63ab657
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 800
+        width: 93
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4aeb71a42f2c2e488249c752669015d
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_4
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 808
+        width: 56
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11ad5ace5a6d3c40af6fdd963795583
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_5
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 816
+        width: 56
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f33698cf2c880408733745e9bbb99a
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_6
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 888
+        width: 110
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3bd7ccd41a5b044abcac0b3679c9998
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_7
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 607
+        width: 289
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3a025fac447fc468d77d299f3ffeee
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_8
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 843
+        width: 104
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8d192aa86b36044929d410973fb5cf
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 764
+        width: 304
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167ec353313ca8642912ee8abf8b978a
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 808
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31f8e8ac53296e4f90c2e4a4b397909
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_11
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 844
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf45b80a48b5a044aa497f7d4f8d52e
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_12
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 789
+        width: 90
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93c85fc21ce7e247b9a67d6fe6a0cc4
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_13
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 859
+        width: 102
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3d45b542c302a42a1e0f98850e33b8
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 628
+        width: 117
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4a61358a217a849a71654c663eb8a4
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_15
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 736
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c390f51333e94c43814b78e29523867
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_16
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 683
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b84afa75c72b64781024d6112effd2
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_17
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 700
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9297f0a98d4e52f41903cc07622a7a41
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_18
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 704
+        width: 118
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4024e4ab4113b47aeba2cfc8f75493
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_19
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 736
+        width: 110
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d32944032c526e41a22955d037b3b04
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_20
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 653
+        width: 110
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8def280d108cd7247bcdb660ab35bbeb
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_21
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 630
+        width: 104
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42009b5205b17f744967e1718ecbf142
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 582
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e3f38943c9a5c4fba16ea2d95cba38
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_23
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 637
+        width: 106
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520b903d1bf99714c8b57110c964479c
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_24
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 587
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdda8504120984148b5625f5c4fe2cf3
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_25
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 587
+        width: 110
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7942ee9c1058b44ad6f8296bd921f9
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_26
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 616
+        width: 118
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049110f2e101e634882f0eb3e3080432
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_28
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 549
+        width: 109
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0253cd026d64204dac4433dad331adf
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_30
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 462
+        width: 122
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdc612ac4fa6f14486527944079aa4f
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_31
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 508
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a75261715d35e445a8bd39a31abce56
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_32
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 364
+        width: 118
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280df42e52c12a04ea8e3e2bd9046950
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_33
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 481
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8295dc236c9dacb439dea62386f9e414
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_34
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 398
+        width: 120
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0a0a53a7e78c744808ec8dd6d63c91
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_35
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 417
+        width: 185
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14504825a600c534abf36547bc81e2ed
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_36
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 486
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7b2b39a2e0f36419f29022796775df
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_37
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 476
+        width: 58
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c06b7a7eda2b4408153d40c1f533ca
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_38
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 362
+        width: 116
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff024d53bc8fe534291f865429a56997
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_39
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 363
+        width: 118
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac24c17391f3c0f47b7ff672f46e6dab
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_40
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 363
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7011cf1b1863849b2e34f6fffaa7b3
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_41
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 15
+        width: 278
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf0e24dbf1d3544caea70b4af4d2c05
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_42
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 14
+        width: 306
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7d70139d7821a46a0d40d733abdaa2
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_43
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 14
+        width: 113
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9da17ff1b071d44924c2d4740fbb8c
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_44
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 15
+        width: 320
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed8d90812d93e24babde51eead7fa9f
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_45
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 15
+        width: 305
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a93c223b22eda4ea23c44969abb616
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_46
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 16
+        width: 305
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e8f27cf85fe7d4089a0b50e66771be
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_47
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 14
+        width: 118
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b16c8795783254fae32cf4797cb5c9
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TilemapFlorestaDecoracao.fw_27
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 621
+        width: 260
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a75f09c0a1149a409290bc054ee689c
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: dd83ca9b0a8b89d4581d3dd9087a12fd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
