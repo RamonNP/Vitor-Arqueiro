@@ -117,7 +117,7 @@ public class Player : MonoBehaviour
     {
         if(gameController.isPause == false)
         {
-            movimento = Input.GetAxisRaw("Horizontal");
+            //movimento = Input.GetAxisRaw("Horizontal");
             //ShowStars();
             CheckDead();
             if (!GetComponent<SpriteRenderer>().flipX)

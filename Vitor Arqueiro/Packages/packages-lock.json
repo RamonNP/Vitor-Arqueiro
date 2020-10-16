@@ -1,11 +1,17 @@
 {
   "dependencies": {
     "com.google.external-dependency-manager": {
-      "version": "1.2.160",
+      "version": "1.2.161",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://unityregistry-pa.googleapis.com"
+    },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.2d.tilemap": {
       "version": "1.0.0",
@@ -86,7 +92,7 @@
     },
     "com.unity.ugui": {
       "version": "1.0.0",
-      "depth": 0,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.modules.ui": "1.0.0",
