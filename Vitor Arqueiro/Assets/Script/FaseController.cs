@@ -36,6 +36,7 @@ public class FaseController : MonoBehaviour
             }
             lego.Add(index, parts[index]);
             GameObject obj = parts[index];
+            obj.SetActive(true);
             obj.gameObject.transform.position = getPosition(i);
             //Debug.Log(getPosition(i)+ "Name - " +obj.gameObject.name);
             

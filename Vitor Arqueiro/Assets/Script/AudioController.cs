@@ -27,6 +27,7 @@ public class AudioController : MonoBehaviour
     public AudioClip armBow;
     public AudioClip shotArrow;
     public AudioClip atackSword;
+    public AudioClip StoneBlockAudioClip;
 
     // configurações dos audios
     public float volumeMaximoMusica;

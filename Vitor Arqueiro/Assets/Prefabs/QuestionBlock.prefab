@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6010822904545731359}
   - component: {fileID: 6010822904545731357}
   - component: {fileID: 6010822904545731358}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: QuestionBlock
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -48,6 +48,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -59,6 +61,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -145,5 +148,4 @@ MonoBehaviour:
   coinMoveSpeed: 8
   coinMoveHeight: 3
   coinFallDistance: 2
-  spiningCoin: {fileID: 3767663742074893998, guid: b8fe408d403f0ff41ab6c6fe521628ca,
-    type: 3}
+  spiningCoin: {fileID: 3767663742074893998, guid: b8fe408d403f0ff41ab6c6fe521628ca, type: 3}

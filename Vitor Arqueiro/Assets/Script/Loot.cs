@@ -13,7 +13,7 @@ public class Loot : MonoBehaviour
 
     public void loot() {
         //CreateExplosion(smoke);
-        Debug.Log("CHEGOU NO LOTTTTT");
+        //Debug.Log("CHEGOU NO LOTTTTT");
         StartCoroutine("lootCorotine");
     }
 
@@ -21,7 +21,7 @@ public class Loot : MonoBehaviour
         //this.gameObject.SetActive(false);
         // controle loot
         int qtdMoedas = Random.Range(1,4);
-        Debug.Log("MOEDAS PARA GERAR "+qtdMoedas);
+        //Debug.Log("MOEDAS PARA GERAR "+qtdMoedas);
         for (int i = 0; i < qtdMoedas; i++)
         {
             GameObject lootTemp = Instantiate(gameController.loots[0], transform.position, transform.localRotation);

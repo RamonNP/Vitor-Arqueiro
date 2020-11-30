@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2671613503324032823}
   - component: {fileID: 2671613503324032821}
   - component: {fileID: 2671613503324032820}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: StoneBlock
   m_TagString: StoneBlock
   m_Icon: {fileID: 0}
@@ -47,6 +47,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -58,6 +60,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -93,8 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 695420c4114bf5c448066fe86bf14dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partOfBlock: {fileID: 2427253809919027525, guid: 4ae0cf5589415ff408baa232dbc9930c,
-    type: 3}
+  partOfBlock: {fileID: 2427253809919027525, guid: 4ae0cf5589415ff408baa232dbc9930c, type: 3}
 --- !u!61 &2671613503324032820
 BoxCollider2D:
   m_ObjectHideFlags: 0

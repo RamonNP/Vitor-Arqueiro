@@ -296,6 +296,7 @@ MonoBehaviour:
   armBow: {fileID: 8300000, guid: 2badfc607fa160a488f9e26e5764128f, type: 3}
   shotArrow: {fileID: 8300000, guid: 3d79b0642b9115340a9646c5b7e1d3d0, type: 3}
   atackSword: {fileID: 0}
+  StoneBlockAudioClip: {fileID: 8300000, guid: bbb3c42c3ab62bb4ea4225b7d24ccfdf, type: 3}
   volumeMaximoMusica: 1
   volumeMaximoFx: 1
 --- !u!4 &744099271
@@ -873,7 +874,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876512613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e67ccdbb80a9d584db58e7e170cee0d8, type: 3}
+  m_Script: {fileID: 11500000, guid: f28102ca3d3c6504e8f5572d000d36bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}

@@ -1,5 +1,4 @@
-﻿using GoogleMobileAds.Api;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    private Fade fade;
+    public GameObject objInteracao;
     public Text LOG;
     private AudioController audioController;
     public float velocidadeFlexa;
@@ -19,10 +20,6 @@ public class Player : MonoBehaviour
     public CameraShake cameraShake;
     public bool attacking; 
     public bool lookLeft;
-    public InterstitialAd interstitial;
-
-    private RewardedAd rewardedAd;
-
     public int fase;
     public int TempoFase;
     public int qtdMoedasInt;
@@ -107,8 +104,12 @@ public class Player : MonoBehaviour
             // TODO: Fazer o personagem aparecer no CheckPOint
             //transform.position = gameController.lastCheckpoint;
         }
-        AdmobScript.getInstance().RequestInterstitial();
-        AdmobScript.getInstance().RequestRewardedAd();
+        //AdmobScript.getInstance().RequestInterstitial();
+        //AdmobScript.getInstance().RequestRewardedAd();
+        fade = FindObjectOfType(typeof(Fade)) as Fade;
+        if(fade != null) {
+            fade.fadeOut();
+        }
 
     }
 
@@ -144,6 +145,7 @@ public class Player : MonoBehaviour
             //Input.GetAxisRaw("Horizontal");
             if(!attacking) {
                 //Debug.Log("ENTRO NA FLECHAAAAAAAAAAA");
+                movimento = Input.GetAxisRaw("Horizontal");
                 if(movimento == 0)
                 {
                     //movimento = Input.GetAxisRaw("Horizontal");
@@ -204,11 +206,42 @@ public class Player : MonoBehaviour
         lookLeft = !lookLeft;
     }
 
+    private void OnTriggerExit2D(Collider2D collision2d) {
+        switch (collision2d.gameObject.tag)
+            {
+                case "PortaTeleporte":
+                    collision2d.gameObject.GetComponent<PortaTeleporte>().tPlayer = null;
+                    objInteracao = null;
+                    collision2d.gameObject.SendMessage("removeInteracao", SendMessageOptions.DontRequireReceiver);
+                    break;
+                default:
+                {
+                    break;
+                }
+                
+            }
+}
+
+    public void interacao() {
+        objInteracao.gameObject.SendMessage("interacao", SendMessageOptions.DontRequireReceiver);
+    }
     private void OnTriggerEnter2D(Collider2D collision2d)
     {
-        Debug.Log(collision2d.gameObject.tag);
+        //Debug.Log(collision2d.gameObject.tag);
         switch (collision2d.gameObject.tag)
         {
+             case "Chefe":
+                collision2d.gameObject.SendMessage("DanoPulo", SendMessageOptions.DontRequireReceiver);
+                StartCoroutine("DanoPulo");
+                break;
+            case "Bau":
+                collision2d.gameObject.SendMessage("abrirBau", SendMessageOptions.DontRequireReceiver);
+                break;
+            case "PortaTeleporte":
+                collision2d.gameObject.GetComponent<PortaTeleporte>().tPlayer = this.transform;
+                collision2d.gameObject.SendMessage("addInteracao", SendMessageOptions.DontRequireReceiver);
+                objInteracao = collision2d.gameObject;
+                break;
             case "Moedas":
                 GetComponent<AudioSource>().PlayOneShot(CoinAudioClip);
                 Destroy(collision2d.gameObject);
@@ -229,7 +262,7 @@ public class Player : MonoBehaviour
                 //lastCheckpoint.transform.position = new Vector3(lastCheckpoint.transform.position.x, lastCheckpoint.transform.position.y+10, lastCheckpoint.transform.position.z);
                 break;
             case "Star":
-                Debug.Log(collision2d.gameObject.GetComponent<StarFase>().numberOfStar);
+                //Debug.Log(collision2d.gameObject.GetComponent<StarFase>().numberOfStar);
                 collision2d.gameObject.GetComponent<StarFase>().Ativo = true;
                 ShowStars();
                 collision2d.gameObject.SetActive(false);
@@ -259,7 +292,15 @@ public class Player : MonoBehaviour
         }
        
     }
-
+    IEnumerator DanoPulo() {
+        if(!jump) {
+            jump = true;
+            GetComponent<AudioSource>().PlayOneShot(EnemeDeadAudioClip);
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, forcaPulo*2));
+        }
+        yield return new WaitForSeconds(1f);
+        jump = false;
+    }
     public void mover(int direcao) {
         movimento = direcao;
         //GetComponent<Rigidbody2D>().velocity = new Vector2(direcao * velocidade, GetComponent<Rigidbody2D>().velocity.y);
@@ -395,6 +436,11 @@ public class Player : MonoBehaviour
                 Destroy(collision.gameObject);
                 addFlexa(1);
                 break;
+            case "Chefe":
+                if(!jump) {
+                    GameOver();
+                }
+                break;
             case "Monster":
                 if (transform.position.y < collision.transform.position.y)
                 {
@@ -454,12 +500,12 @@ public class Player : MonoBehaviour
                 }
                 break;
             case "Boss":
-                Debug.Log("Boss");
+                //Debug.Log("Boss");
                 if (transform.position.y < collision.transform.position.y)
                 {
                     GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                     //GameOver();
-                    Debug.Log(fase);
+                    //Debug.Log(fase);
                     SceneManager.LoadSceneAsync("Fase_"+fase);
                 }
                 else
@@ -478,7 +524,7 @@ public class Player : MonoBehaviour
                         StartCoroutine(FinishGame(fase));
                     } else
                     {
-                        if(collision.gameObject.GetComponent<Boss>().sprite.flipX)
+                        if(collision.gameObject.GetComponent<Boss>().speed > 0)
                         {
                             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(500, 200));   
                         } else
@@ -499,7 +545,7 @@ public class Player : MonoBehaviour
 
     void CheckDead()
     {
-        if (transform.position.y < -5f)
+        if (transform.position.y < -50f)
         {
             GameOver();
         }
@@ -523,14 +569,14 @@ public class Player : MonoBehaviour
         catch
         {
             TXTDebug.text = TXTDebug.text + "Erro Inter";
-            AdmobScript.getInstance().RequestInterstitial();
+            //AdmobScript.getInstance().RequestInterstitial();
         }
         Morrer();
 
     }
     public void MoreArrows(int qtd){
-        print("mais Flexas");
-        AdmobScript.getInstance().ShowRewardedAd();
+        //print("mais Flexas");
+        RewardedAdsScript.getInstance().ShowRewardedVideo();
     }
     public void CallBackmoreArrows(int qtd){
         addFlexa(qtd);
@@ -606,7 +652,7 @@ public class Player : MonoBehaviour
         //PlayerPrefs.SetInt("notaFinal" + idTema.ToString(), (int) notaFinal);
         //idTema = PlayerPrefs.GetInt("idTema");
         //salva estrelas
-        Debug.Log(starFase3.GetComponent<StarFase>().Ativo);
+        //Debug.Log(starFase3.GetComponent<StarFase>().Ativo);
         if (starFase1.GetComponent<StarFase>().Ativo)
         {
             
@@ -657,18 +703,7 @@ public class Player : MonoBehaviour
         jump = false;
     }
 
-    private void RequestInterstitial()
-    {
-
-        string adUnitId = "ca-app-pub-2409485950941966/8543829220";
-        // Initialize an InterstitialAd.
-        interstitial = new InterstitialAd(adUnitId);
-        // Create an empty ad request.
-        AdRequest request = new AdRequest.Builder().Build();
-        // Load the interstitial with the request.
-        interstitial.LoadAd(request);
-
-    }
+    
     /*
     public void ShowInterstitialAd()
     {

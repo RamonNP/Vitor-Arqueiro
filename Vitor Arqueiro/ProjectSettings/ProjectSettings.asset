@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Pereira Games
+  companyName: Arbitrium
   productName: Vitor Arqueiro
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -125,7 +125,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 23
+  bundleVersion: 5
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -169,9 +169,9 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: br.com.rad.jairo.unity
+    Android: br.com.arbitrium.game.adventure.va
   buildNumber: {}
-  AndroidBundleVersionCode: 23
+  AndroidBundleVersionCode: 5
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -248,8 +248,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/Valdeko/Google Drive/Projetos_contruct2/KeyStores/zombie_sobrevivencia/sobrevivenvcia_zombie_JAIRO_UNITY.jks
-  AndroidKeyaliasName: jairo_unity
+  AndroidKeystoreName: '{dedicated}: Google Drive/user.keystore'
+  AndroidKeyaliasName: vitor-arqueiro
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
@@ -835,7 +835,13 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Analytics: 1
+    Build: 0
+    Collab: 0
+    Game Performance: 0
+    Purchasing: 0
+    Unity Ads: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -848,10 +854,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: a800f3a0-ab37-41eb-b0a1-b09014d1bbdd
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Vitor Arqueiro (1)
+  organizationId: unity_eid8lm-yc9h9zg
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
