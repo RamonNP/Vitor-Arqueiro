@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 733530369489276477}
   - component: {fileID: 5568716285767199258}
   - component: {fileID: 1812333536156637686}
-  - component: {fileID: 1812333536156637687}
   - component: {fileID: 1812333536156637688}
+  - component: {fileID: 7154732511371251059}
   m_Layer: 10
   m_Name: GreenMonster
   m_TagString: Monster
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1321555907
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a8247f0069a4cf5438e86c5a606f6458, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -158,32 +158,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1812333536156637687
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812333536156637685}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.11842048, y: -0.34718418}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.51, y: 5.08}
-    newSize: {x: 4.51, y: 5.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.1385553, y: 3.176382}
-  m_EdgeRadius: 0
 --- !u!114 &1812333536156637688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +181,22 @@ MonoBehaviour:
   wallCheckLayer:
     serializedVersion: 2
     m_Bits: 33280
+--- !u!70 &7154732511371251059
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812333536156637685}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.11569023, y: -0.26608884}
+  m_Size: {x: 2.9366114, y: 3.113255}
+  m_Direction: 0
 --- !u!1 &2622987309704485486
 GameObject:
   m_ObjectHideFlags: 0

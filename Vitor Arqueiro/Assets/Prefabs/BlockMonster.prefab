@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 4515779536338645309}
   - component: {fileID: 8776756569384277274}
   - component: {fileID: 3288740243276769014}
-  - component: {fileID: 3288740243276769015}
   - component: {fileID: 3288740243276769016}
+  - component: {fileID: 4949373587197860158}
   m_Layer: 10
   m_Name: BlockMonster
   m_TagString: Monster
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1321555907
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 87dba0078d4bf404b83041d3ebcaf578, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -158,32 +158,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &3288740243276769015
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3288740243276769013}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004845381, y: -0.0056368113}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.6}
-    newSize: {x: 4.51, y: 5.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5088773, y: 0.5009804}
-  m_EdgeRadius: 0
 --- !u!114 &3288740243276769016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +181,22 @@ MonoBehaviour:
   wallCheckLayer:
     serializedVersion: 2
     m_Bits: 33280
+--- !u!70 &4949373587197860158
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3288740243276769013}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02172184, y: 0.026066452}
+  m_Size: {x: 0.40015793, y: 0.5478671}
+  m_Direction: 0
 --- !u!1 &3784501894739627165
 GameObject:
   m_ObjectHideFlags: 0

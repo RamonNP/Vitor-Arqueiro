@@ -17,6 +17,7 @@ TagManager:
   - PortaTeleporte
   - Bau
   - Chefe
+  - Armadilha
   layers:
   - Default
   - TransparentFX

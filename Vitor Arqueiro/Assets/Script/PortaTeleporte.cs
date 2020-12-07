@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PortaTeleporte : MonoBehaviour
 {
-    private Fade fade;
+    public Fade fade;
     public Transform tPlayer;
     public GameObject destino;
     public GameObject cameras;

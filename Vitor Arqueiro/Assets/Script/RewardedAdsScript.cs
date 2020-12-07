@@ -45,7 +45,7 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
             if(player == null){
                 player = FindObjectOfType(typeof(Player)) as Player;
             }
-            player.CallBackmoreArrows(5);
+            player.CallBackmoreArrows(10);
 
         } else if (showResult == ShowResult.Skipped) {
             // Do not reward the user for skipping the ad.

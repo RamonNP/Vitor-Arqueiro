@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bau : MonoBehaviour
 {
     private bool aberto;
+    public int qtdLootRandon;
      private Animator animator;
     private GameController gameController;
     // Start is called before the first frame update
@@ -27,7 +28,10 @@ public class Bau : MonoBehaviour
     IEnumerator lootCorotine(){
         //this.gameObject.SetActive(false);
         // controle loot
-        int qtdMoedas = Random.Range(1,10);
+        if(qtdLootRandon == 0) {
+            qtdLootRandon = 10;
+        }
+        int qtdMoedas = Random.Range(1,qtdLootRandon);
         //Debug.Log("MOEDAS PARA GERAR "+qtdMoedas);
         for (int i = 0; i < qtdMoedas; i++)
         {

@@ -267,26 +267,8 @@ public class Player : MonoBehaviour
                 ShowStars();
                 collision2d.gameObject.SetActive(false);
                 break;
-            case "Monster":
-            /*
-                if (transform.position.y < collision2d.transform.position.y)
-                {
-                    GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                    GameOver();
-                }
-                else
-                {
-                    GetComponent<AudioSource>().PlayOneShot(EnemeDeadAudioClip);
-                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, forcaPulo));
-
-                    //Destroy(collision2d.gameObject);
-                    collision2d.gameObject.SetActive(false);
-                    CreateExplosion(collision2d.gameObject);
-                    ObjetosDesativados.Add(collision2d.gameObject);
-                    Debug.Log("CAHMOU NA LOOT");
-                    collision2d.gameObject.SendMessage("loot", SendMessageOptions.DontRequireReceiver);
-                }
-                */
+            case "Armadilha":
+                GameOver();
                 break;
             
         }
