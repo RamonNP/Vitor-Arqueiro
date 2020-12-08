@@ -18,6 +18,7 @@ public class FaseController : MonoBehaviour
         this.gameObject.transform.position = new Vector3(100,100,0);
         lego = new Dictionary<int, GameObject>();
         createLego();
+        Debug.Log("DEPOIS LEGO");            
         StartCoroutine ("animacaoMorrer");
     }
     
@@ -27,21 +28,28 @@ public class FaseController : MonoBehaviour
     }
     private void createLego() {
 
+        //Instantiate (startPhase, getPosition(0), this.transform.localRotation);
         startPhase.gameObject.transform.position = getPosition(0);
+        startPhase.SetActive(true);
         for (int i = 1; i < stageSize; i++)
         {
+            //Debug.Log("FOR");  
             int index = Random.Range(0,parts.Length);
             while(lego.ContainsKey(index)) {
+                //Debug.Log("while");  
                 index = Random.Range(0,parts.Length);
             }
             lego.Add(index, parts[index]);
             GameObject obj = parts[index];
-            obj.SetActive(true);
+            Instantiate (obj, getPosition(i), startPhase.transform.localRotation);
             obj.gameObject.transform.position = getPosition(i);
+            //obj.SetActive(true);
             //Debug.Log(getPosition(i)+ "Name - " +obj.gameObject.name);
             
         }
+        //Instantiate (endPhase, getPosition(stageSize), this.transform.localRotation);
         endPhase.gameObject.transform.position = getPosition(stageSize);
+        endPhase.SetActive(true);
     }
     private Vector3 getPosition(int i){
         float positionX = 0f;

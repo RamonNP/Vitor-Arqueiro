@@ -7,7 +7,7 @@ public class MonsterHorizontalMove : MonoBehaviour
     public bool dead;
     public GameObject smoke;
     private Animator animator;
-    private bool colidde = false;
+    //private bool colidde = false;
 
     public float move = -2;
     private float xInimigo ;
@@ -45,7 +45,7 @@ public class MonsterHorizontalMove : MonoBehaviour
  //       Debug.Log("VARIAVEL X "+ move );
         transform.localScale = new Vector3 (localScaleX, transform.localScale.y, transform.localScale.z);
 //        Debug.Log("transform.localScale "+ transform.localScale.x );
-        colidde = false;
+        //colidde = false;
         yield return new WaitForSeconds(0.4f);
         flip = false;
         //GetComponent<SpriteRenderer>().flipX = !GetComponent<SpriteRenderer>().flipX;
@@ -58,7 +58,7 @@ public class MonsterHorizontalMove : MonoBehaviour
         if (col.gameObject.CompareTag("Platform"))
         {
             //Debug.Log("TRUE");
-            colidde = true;
+            //colidde = true;
         }
     }
 
@@ -68,7 +68,7 @@ public class MonsterHorizontalMove : MonoBehaviour
         if (col.gameObject.CompareTag("Platform"))
         {
             //Debug.Log("TRUE");
-            colidde = false;
+            //colidde = false;
             //  Debug.Log("grounded=false");
         }
     }

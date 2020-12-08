@@ -51,8 +51,11 @@ public class Player : MonoBehaviour
 
     //Verifica chao
     public bool isGround;
+    public bool isWall;
     public Transform groundCheck;
     public LayerMask wallCheckLayer;
+    public Transform wallCheck;
+    public LayerMask wallCheckLayerSlider;
 
     //Estrelas na fase
     public GameObject starFase1;
@@ -132,6 +135,7 @@ public class Player : MonoBehaviour
             //check chao
             //Debug.DrawRay(groundCheck.position, 0.50f, Color.red);
             isGround = Physics2D.OverlapCircle(groundCheck.position, explosionRadius, wallCheckLayer);
+            isWall = Physics2D.OverlapCircle(wallCheck.position, explosionRadius, wallCheckLayerSlider);
             animator.SetBool("grounded", isGround);
             //contador de tempo
             timeFloat += Time.deltaTime;
@@ -143,7 +147,7 @@ public class Player : MonoBehaviour
 
 
             //Input.GetAxisRaw("Horizontal");
-            if(!attacking) {
+            if(!attacking || !isWall) {
                 //Debug.Log("ENTRO NA FLECHAAAAAAAAAAA");
                 movimento = Input.GetAxisRaw("Horizontal");
                 if(movimento == 0)
