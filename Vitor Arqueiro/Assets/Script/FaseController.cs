@@ -15,10 +15,11 @@ public class FaseController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RewardedAdsScript.getInstance().ShowBanner();
         this.gameObject.transform.position = new Vector3(100,100,0);
         lego = new Dictionary<int, GameObject>();
         createLego();
-        Debug.Log("DEPOIS LEGO");            
+        //Debug.Log("DEPOIS LEGO");            
         StartCoroutine ("animacaoMorrer");
     }
     

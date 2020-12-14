@@ -113,7 +113,7 @@ public class MonsterHorizontalMove : MonoBehaviour
             dir.x = transform.localScale.x ;
             wall = Physics2D.Raycast(wallCheck.gameObject.transform.position, dir, 0.1f, wallCheckLayer);
             if(wall && !flip){
-                print("if(wall && !flip){");
+                //print("if(wall && !flip){");
                  StartCoroutine("Flip");
             }
              //Debug.Log("Update" + " dead" + dead);

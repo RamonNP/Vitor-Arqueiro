@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public enum GameState
 {
 	DIALOGO,
@@ -14,6 +15,8 @@ public enum GameState
 }
 public class GameController : MonoBehaviour
 {
+    public bool controle;
+    private Player player;
     public LayerMask interacaoMaskInimigoHorizontal;
 
     public GameObject explosion2;
@@ -43,9 +46,33 @@ public class GameController : MonoBehaviour
         //StartCoroutine(Fade(FinishCanvasGroup, 0f, 1f, 2f));
     }
 
+    void Update() {
+        //MovimentoPassaros Controle USB
+        int movimento = (int) Input.GetAxisRaw("Horizontal");
+        if(movimento != 0 ){
+            controle = true;
+            move(movimento);
+        } else if(controle) {
+            move(0);
+            controle = false;
+        }
+
+        int btnJump = (int) Input.GetAxisRaw("Fire3");
+        if(btnJump != 0){
+            Jump();
+        }
+        int btnFlexa = (int) Input.GetAxisRaw("Fire2");
+        if(btnFlexa != 0){
+            brnFlexa();
+        }
+
+    }
     
     void Start()
     {
+        if(lastCheckpoint.x != 0){
+            
+        }
         audioController = FindObjectOfType(typeof(AudioController)) as AudioController;
         DontDestroyOnLoad(this.gameObject);
     }
@@ -75,5 +102,29 @@ public class GameController : MonoBehaviour
             instance = GameObject.FindObjectOfType<GameController>();
         }
         return instance;
+    }
+
+    public void move(int mov){
+        if(player == null){
+            player = FindObjectOfType(typeof(Player)) as Player;
+        } else {
+            player.mover(mov);
+        }
+    }
+    public void Jump(){
+        if(player == null){
+            player = FindObjectOfType(typeof(Player)) as Player;
+        } else {
+            player.JumpUp();
+        }
+    }
+    public void brnFlexa(){
+        if(player == null){
+            player = FindObjectOfType(typeof(Player)) as Player;
+        } else {
+            if(!player.attacking && Time.time > player.nextFire) {
+                player.btnAtacarFlexa();
+            }
+        }
     }
 }

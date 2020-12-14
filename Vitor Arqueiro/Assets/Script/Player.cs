@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
     public Transform groundCheck;
     public LayerMask wallCheckLayer;
     public Transform wallCheck;
-    public LayerMask wallCheckLayerSlider;
+    //public LayerMask wallCheckLayerSlider;
 
     //Estrelas na fase
     public GameObject starFase1;
@@ -78,18 +78,19 @@ public class Player : MonoBehaviour
 
     //public float movimento;// { get => movimento; set => movimento = value; }
 
-    private bool degubAtivo = false;
     private GameController gameController;
     public float movimento;
     void Start()
     {
+        starFase1 = GameObject.Find("Star1");
+        starFase2 = GameObject.Find("Star2");
+        starFase3 = GameObject.Find("Star3");
 
         cameraShake = FindObjectOfType(typeof(CameraShake)) as CameraShake;
         audioController = FindObjectOfType(typeof(AudioController)) as AudioController;
         gameController = GameController.getInstance();
         gameController.isPause = false;
         animator = GetComponent<Animator>();
-        ShowDebug();
         //this.rewardedAd = new RewardedAd(adUnitId);
         //Screen.orientation = ScreenOrientation.LandscapeLeft;
 
@@ -113,7 +114,9 @@ public class Player : MonoBehaviour
         if(fade != null) {
             fade.fadeOut();
         }
-
+        if(gameController.lastCheckpoint.x != 0){
+            transform.position = new Vector3(gameController.lastCheckpoint.x, gameController.lastCheckpoint.y + 1.5f, gameController.lastCheckpoint.z);
+        }
     }
 
     // Update is called once per frame
@@ -135,7 +138,7 @@ public class Player : MonoBehaviour
             //check chao
             //Debug.DrawRay(groundCheck.position, 0.50f, Color.red);
             isGround = Physics2D.OverlapCircle(groundCheck.position, explosionRadius, wallCheckLayer);
-            isWall = Physics2D.OverlapCircle(wallCheck.position, explosionRadius, wallCheckLayerSlider);
+            //isWall = Physics2D.OverlapCircle(wallCheck.position, explosionRadius, wallCheckLayerSlider);
             animator.SetBool("grounded", isGround);
             //contador de tempo
             timeFloat += Time.deltaTime;
@@ -147,9 +150,9 @@ public class Player : MonoBehaviour
 
 
             //Input.GetAxisRaw("Horizontal");
-            if(!attacking || !isWall) {
+            if(!attacking) {
                 //Debug.Log("ENTRO NA FLECHAAAAAAAAAAA");
-                movimento = Input.GetAxisRaw("Horizontal");
+                //movimento = Input.GetAxisRaw("Horizontal");
                 if(movimento == 0)
                 {
                     //movimento = Input.GetAxisRaw("Horizontal");
@@ -340,7 +343,7 @@ public class Player : MonoBehaviour
 
             case 2:
             {
-                print("DIMINUINDO FLEXAS");
+                //print("DIMINUINDO FLEXAS");
                 removeFlexa(1);
                 GameObject flechaTemp = Instantiate (flexa, spawnFlecha.position, spawnFlecha.localRotation);
                 flechaTemp.transform.localScale = new Vector3 (flechaTemp.transform.localScale.x * transform.localScale.x, flechaTemp.transform.localScale.y, flechaTemp.transform.localScale.z);
@@ -589,17 +592,17 @@ public class Player : MonoBehaviour
         {
 
             int qtd = 0;
-            if(starFase1.GetComponent<StarFase>().Ativo)
+            if(starFase1 != null && starFase1.GetComponent<StarFase>().Ativo)
             {
                 starFase1.SetActive(false);
                 qtd++;
             }
-            if (starFase2.GetComponent<StarFase>().Ativo)
+            if (starFase2 != null && starFase2.GetComponent<StarFase>().Ativo)
             {
                 starFase2.SetActive(false);
                 qtd++;
             }
-            if (starFase3.GetComponent<StarFase>().Ativo)
+            if (starFase3 != null && starFase3.GetComponent<StarFase>().Ativo)
             {
                 starFase3.SetActive(false);
                 qtd++;
@@ -639,16 +642,16 @@ public class Player : MonoBehaviour
         //idTema = PlayerPrefs.GetInt("idTema");
         //salva estrelas
         //Debug.Log(starFase3.GetComponent<StarFase>().Ativo);
-        if (starFase1.GetComponent<StarFase>().Ativo)
+        if (starFase1 != null && starFase1.GetComponent<StarFase>().Ativo)
         {
             
             PlayerPrefs.SetInt("star"+ fase+"_1",1);
         }
-        if (starFase2.GetComponent<StarFase>().Ativo)
+        if (starFase2 != null && starFase2.GetComponent<StarFase>().Ativo)
         {
             PlayerPrefs.SetInt("star" + fase + "_2", 1);
         }
-        if (starFase3.GetComponent<StarFase>().Ativo)
+        if (starFase3 != null && starFase3.GetComponent<StarFase>().Ativo)
         {
             PlayerPrefs.SetInt("star" + fase + "_3", 1);
         }
@@ -707,12 +710,6 @@ public class Player : MonoBehaviour
         }
 
     }*/ 
-    public void ShowDebug()
-    {
-        //Debug.Log("ENTROU");
-        TXTDebug.gameObject.SetActive(degubAtivo);
-        degubAtivo = !degubAtivo;
-    }
 
     public float explosionRadius = 0.001f;
 

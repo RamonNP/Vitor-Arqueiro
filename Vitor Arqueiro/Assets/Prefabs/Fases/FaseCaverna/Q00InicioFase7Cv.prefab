@@ -19492,7 +19492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2166462422984232389}
   m_Layer: 0
-  m_Name: Q00InicioCv
+  m_Name: Q00InicioFase7Cv
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

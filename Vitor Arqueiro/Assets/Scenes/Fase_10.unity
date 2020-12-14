@@ -1131,7 +1131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &84683783
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6245,7 +6245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.719948, y: 51.309376, z: -10}
+  m_LocalPosition: {x: 6.719953, y: 51.309334, z: -10}
   m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8590,21 +8590,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageSize: 1
-  startPhase: {fileID: 1764127762}
+  startPhase: {fileID: 2166462422968573556}
   middle: {fileID: 0}
-  endPhase: {fileID: 0}
-  parts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  endPhase: {fileID: 3205206581245584768, guid: 0e26bc674acf7064b9cb033bc59e2a3f,
+    type: 3}
+  parts: []
 --- !u!1 &792429777
 GameObject:
   m_ObjectHideFlags: 0
@@ -23084,6 +23074,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minotauro-02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6929233131096232498, guid: d71e57c21ccdd094d9033c68200f0f4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Chefe
+      objectReference: {fileID: 0}
     - target: {fileID: 8363183808743393495, guid: d71e57c21ccdd094d9033c68200f0f4f,
         type: 3}
       propertyPath: m_RootOrder
@@ -23092,12 +23087,12 @@ PrefabInstance:
     - target: {fileID: 8363183808743393495, guid: d71e57c21ccdd094d9033c68200f0f4f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.83
+      value: 26.84
       objectReference: {fileID: 0}
     - target: {fileID: 8363183808743393495, guid: d71e57c21ccdd094d9033c68200f0f4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47.56
+      value: 47.23
       objectReference: {fileID: 0}
     - target: {fileID: 8363183808743393495, guid: d71e57c21ccdd094d9033c68200f0f4f,
         type: 3}
@@ -23141,96 +23136,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71e57c21ccdd094d9033c68200f0f4f, type: 3}
---- !u!1 &1512332992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6929233131096232498, guid: d71e57c21ccdd094d9033c68200f0f4f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1512332991}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1512332993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512332992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b701e9b37cae14a8681e534de4ca85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loot: {fileID: 5321319644930672605, guid: e054f53a036b85d46a5fc19c6b06547d, type: 3}
-  healt: 10
-  distanceAttack: 4
-  speed: 3
-  rb2d: {fileID: 0}
-  cld2d: {fileID: 0}
-  saida: {fileID: 0}
-  scaleToFlip: {fileID: 0}
-  isFlip: 0
---- !u!70 &1512332994
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512332992}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.11272049, y: 1.4259281}
-  m_Size: {x: 2.2010574, y: 2.5663567}
-  m_Direction: 0
---- !u!61 &1512332995
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512332992}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.051506996, y: 2.925558}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.5039845, y: 0.4643364}
-  m_EdgeRadius: 0
---- !u!50 &1512332996
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512332992}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!1 &1513556214
 GameObject:
   m_ObjectHideFlags: 0
@@ -23893,8 +23798,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14860559, y: -0.012379885}
-  m_Size: {x: 2.6257987, y: 3.8890834}
+  m_Offset: {x: -0.0049743652, y: -0.55762863}
+  m_Size: {x: 0.4948578, y: 1.4547424}
   m_Direction: 0
 --- !u!4 &1559204905 stripped
 Transform:
@@ -64853,7 +64758,7 @@ MonoBehaviour:
   estrela2: {fileID: 1593173578}
   estrela1: {fileID: 1904741153}
   forcaPulo: 900
-  velocidade: 10
+  velocidade: 5
   fire: {fileID: 0}
   offset: {x: 0.4, y: 0.1}
   velocityFireball: {x: 10, y: -10}
@@ -64863,10 +64768,12 @@ MonoBehaviour:
   fireRate: 0.8
   nextFire: 0
   isGround: 0
+  isWall: 0
   groundCheck: {fileID: 1593629456}
   wallCheckLayer:
     serializedVersion: 2
-    m_Bits: 8421889
+    m_Bits: 8389121
+  wallCheck: {fileID: 0}
   starFase1: {fileID: 1603803763}
   starFase2: {fileID: 1201636291}
   starFase3: {fileID: 967769990}
@@ -66202,7 +66109,7 @@ GameObject:
   - component: {fileID: 469803868170211822}
   - component: {fileID: 469803868170211820}
   - component: {fileID: 469803868170211821}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: StoneBlockNoite (1)
   m_TagString: StoneBlock
   m_Icon: {fileID: 0}
@@ -66429,7 +66336,7 @@ GameObject:
   - component: {fileID: 469803868466913945}
   - component: {fileID: 469803868466913947}
   - component: {fileID: 469803868466913946}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: StoneBlockNoite (2)
   m_TagString: StoneBlock
   m_Icon: {fileID: 0}
@@ -66552,7 +66459,7 @@ GameObject:
   - component: {fileID: 469803869237399562}
   - component: {fileID: 469803869237399560}
   - component: {fileID: 469803869237399561}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: StoneBlockNoite (4)
   m_TagString: StoneBlock
   m_Icon: {fileID: 0}
@@ -66675,7 +66582,7 @@ GameObject:
   - component: {fileID: 469803869348213603}
   - component: {fileID: 469803869348213601}
   - component: {fileID: 469803869348213600}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: StoneBlockNoite (5)
   m_TagString: StoneBlock
   m_Icon: {fileID: 0}
@@ -66694,7 +66601,7 @@ GameObject:
   - component: {fileID: 469803869636548167}
   - component: {fileID: 469803869636548165}
   - component: {fileID: 469803869636548164}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: StoneBlockNoite (3)
   m_TagString: StoneBlock
   m_Icon: {fileID: 0}
@@ -66921,7 +66828,7 @@ GameObject:
   - component: {fileID: 469803869681529546}
   - component: {fileID: 469803869681529544}
   - component: {fileID: 469803869681529545}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: StoneBlockNoite (6)
   m_TagString: StoneBlock
   m_Icon: {fileID: 0}
@@ -92455,7 +92362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2166462422968573556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2166462422527077462}
@@ -97756,7 +97663,7 @@ GameObject:
   - component: {fileID: 6270155816987526544}
   - component: {fileID: 6270155816987526546}
   - component: {fileID: 6270155816987526545}
-  m_Layer: 0
+  m_Layer: 23
   m_Name: QuestionBlockNoite (1)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}

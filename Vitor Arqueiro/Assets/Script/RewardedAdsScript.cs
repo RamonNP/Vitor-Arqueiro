@@ -7,7 +7,8 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
 {
     private Player player;
    string gameId = "3879069";
-    string myPlacementId = "rewardedVideo";
+    string videoPlacementId = "rewardedVideo";
+    string bannerPlacementId = "bannerVitorArqueiroId";
     bool testMode = false;
 
     public static RewardedAdsScript instance;
@@ -27,10 +28,23 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
         Advertisement.Initialize (gameId, testMode);
     }
 
+    IEnumerator ShowBannerWhenReady () {
+        while (!Advertisement.IsReady (bannerPlacementId)) {
+            yield return new WaitForSeconds (0.5f);
+        }
+        Advertisement.Banner.SetPosition(BannerPosition.TOP_CENTER);    
+        Advertisement.Banner.Show (bannerPlacementId);
+        yield return new WaitForSeconds (20f);
+        Advertisement.Banner.Hide();
+    }
+
+    public void ShowBanner() {
+        StartCoroutine (ShowBannerWhenReady ());
+    }
     public void ShowRewardedVideo() {
         // Check if UnityAds ready before calling Show method:
-        if (Advertisement.IsReady(myPlacementId)) {
-            Advertisement.Show(myPlacementId);
+        if (Advertisement.IsReady(videoPlacementId)) {
+            Advertisement.Show(videoPlacementId);
         } 
         else {
             Debug.Log("Rewarded video is not ready at the moment! Please try again later!");
@@ -56,7 +70,7 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
 
     public void OnUnityAdsReady (string placementId) {
         // If the ready Placement is rewarded, show the ad:
-        if (placementId == myPlacementId) {
+        if (placementId == videoPlacementId) {
             // Optional actions to take when the placement becomes ready(For example, enable the rewarded ads button)
         }
     }
