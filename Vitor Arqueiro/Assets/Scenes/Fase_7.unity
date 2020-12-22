@@ -17686,7 +17686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.519872, y: 51.313324, z: -10}
+  m_LocalPosition: {x: 4.519871, y: 51.31332, z: -10}
   m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -27249,6 +27249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f7d012ef1ff4f45bfdcb324d19b1f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controle: 0
   interacaoMaskInimigoHorizontal:
     serializedVersion: 2
     m_Bits: 0
@@ -52160,6 +52161,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 391644725}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

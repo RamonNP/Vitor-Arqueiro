@@ -40,6 +40,15 @@ public class FaseSelect : MonoBehaviour
 
     void Start()
     {
+        //reset fases
+        /*
+        for (var i = 0; i < 20; i++)
+        {
+            PlayerPrefs.SetInt("Fase_"+ i, 0);
+        } */
+
+
+
         //Music.GetComponent<AudioSource>().Play();
         //LoadScreen("Fase_1");
         fases.Add("Fase_1");

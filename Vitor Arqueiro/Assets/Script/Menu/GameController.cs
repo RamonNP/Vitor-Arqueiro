@@ -42,6 +42,7 @@ public class GameController : MonoBehaviour
         PlayerPrefs.SetInt("Fase_"+ fase, 1);
         isPause = false;
         SceneManager.LoadScene("MenuJairo");
+        lastCheckpoint.x = 0;
         //FinishCanvasGroup.interactable = true;
         //StartCoroutine(Fade(FinishCanvasGroup, 0f, 1f, 2f));
     }

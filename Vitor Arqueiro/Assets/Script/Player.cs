@@ -265,6 +265,7 @@ public class Player : MonoBehaviour
                 break;
             case "CheckPoint":
                 gameController.lastCheckpoint = collision2d.gameObject.transform.position;
+                SaveStars();
                 //lastCheckpoint.transform.position.y = lastCheckpoint.transform.position.y + 10f;
                 //lastCheckpoint.transform.position = new Vector3(lastCheckpoint.transform.position.x, lastCheckpoint.transform.position.y+10, lastCheckpoint.transform.position.z);
                 break;
