@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//using UnityStandardAssets.CrossPlatformInput;
+using Cinemachine;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     public int quantidadeFlechas;
     public Text qtdFlexa;
     public Transform spawnFlecha;
-    public CameraShake cameraShake;
     public bool attacking; 
     public bool lookLeft;
     public int fase;
@@ -76,7 +75,14 @@ public class Player : MonoBehaviour
     private List<GameObject> ObjetosDesativados = new List<GameObject>();
     private Animator animator;
 
-    //public float movimento;// { get => movimento; set => movimento = value; }
+    public CinemachineVirtualCamera VirtualCamera;
+    private CinemachineBasicMultiChannelPerlin virtualCameraNoise;
+    public float ShakeDuration = 0.3f;          // Time the Camera Shake effect will last
+    public float ShakeAmplitude = 3.2f;         // Cinemachine Noise Profile Parameter
+    public float ShakeFrequency = 3.0f;         // Cinemachine Noise Profile Parameter
+
+    public float ShakeElapsedTime = 0f;
+
 
     private GameController gameController;
     public float movimento;
@@ -86,7 +92,10 @@ public class Player : MonoBehaviour
         starFase2 = GameObject.Find("Star2");
         starFase3 = GameObject.Find("Star3");
 
-        cameraShake = FindObjectOfType(typeof(CameraShake)) as CameraShake;
+        qtdFlexa = GameObject.Find("QtdFlecha").GetComponent<Text>();
+        qtdMoedas = GameObject.Find("QtdMoedas").GetComponent<Text>();
+
+        time = GameObject.Find("Time").GetComponent<Text>();
         audioController = FindObjectOfType(typeof(AudioController)) as AudioController;
         gameController = GameController.getInstance();
         gameController.isPause = false;
@@ -117,13 +126,41 @@ public class Player : MonoBehaviour
         if(gameController.lastCheckpoint.x != 0){
             transform.position = new Vector3(gameController.lastCheckpoint.x, gameController.lastCheckpoint.y + 1.5f, gameController.lastCheckpoint.z);
         }
+        // Get Virtual Camera Noise Profile
+        if (VirtualCamera != null){
+            virtualCameraNoise = VirtualCamera.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>(); 
+        }
+        
     }
 
+    public void cameraShake() {
+         // If the Cinemachine componet is not set, avoid update
+        if (VirtualCamera != null && virtualCameraNoise != null)
+        {
+            // If Camera Shake effect is still playing
+            if (ShakeElapsedTime > 0)
+            {
+                // Set Cinemachine Camera Noise parameters
+                virtualCameraNoise.m_AmplitudeGain = ShakeAmplitude;
+                virtualCameraNoise.m_FrequencyGain = ShakeFrequency;
+
+                // Update Shake Timer
+                ShakeElapsedTime -= Time.deltaTime;
+            }
+            else
+            {
+                // If Camera Shake effect is over, reset variables
+                virtualCameraNoise.m_AmplitudeGain = 0f;
+                ShakeElapsedTime = 0f;
+            }
+        }
+    }
     // Update is called once per frame
     void FixedUpdate()
     {
         if(gameController.isPause == false)
         {
+            cameraShake();
             //movimento = Input.GetAxisRaw("Horizontal");
             //ShowStars();
             CheckDead();
@@ -548,19 +585,6 @@ public class Player : MonoBehaviour
     void GameOver()
     {
         timeFloat = 0;
-        try
-        {
-            TXTDebug.text = " showInterstitialAd IN";
-            //ShowInterstitialAd();
-            //AdmobScript.getInstance().ShowRewardedAd();
-            TXTDebug.text = TXTDebug.text + "OUT";
-
-        }
-        catch
-        {
-            TXTDebug.text = TXTDebug.text + "Erro Inter";
-            //AdmobScript.getInstance().RequestInterstitial();
-        }
         Morrer();
 
     }
@@ -663,15 +687,36 @@ public class Player : MonoBehaviour
         //Debug.Log(PlayerPrefs.GetInt("star3"));
         if (PlayerPrefs.GetInt("star" + fase + "_1") == 1)
         {
-            starFase1.GetComponent<StarFase>().Ativo = true;
+            try
+            {
+                starFase1.GetComponent<StarFase>().Ativo = true;
+            }
+            catch (System.Exception ex)
+            {
+                 // TODO
+            }
         }
         if (PlayerPrefs.GetInt("star" + fase + "_2") == 1)
         {
-            starFase2.GetComponent<StarFase>().Ativo = true;
+             try
+            {
+                starFase2.GetComponent<StarFase>().Ativo = true;
+            }
+            catch (System.Exception ex)
+            {
+                 // TODO
+            }
         }
         if (PlayerPrefs.GetInt("star" + fase + "_3") == 1)
         {
-            starFase3.GetComponent<StarFase>().Ativo = true;
+             try
+            {
+                starFase3.GetComponent<StarFase>().Ativo = true;
+            }
+            catch (System.Exception ex)
+            {
+                 // TODO
+            }
         }
         ShowStars();
     }

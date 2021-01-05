@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MonsterHorizontalMove : MonoBehaviour
 {
+    public Player player;
     public bool dead;
     public GameObject smoke;
     private Animator animator;
@@ -27,6 +28,7 @@ public class MonsterHorizontalMove : MonoBehaviour
         gameController = GameController.getInstance();
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        player = FindObjectOfType(typeof(Player)) as Player;
     }
 
     // Update is called once per frame
@@ -83,6 +85,8 @@ public class MonsterHorizontalMove : MonoBehaviour
                 Instantiate(gameController.explosion2, other.gameObject.transform.position, other.gameObject.transform.rotation);
                 Destroy(other.gameObject); // destroi a flecha
                 Destroy(this.gameObject); // destroi a flecha
+                //coloca o tempo que a camera Shake vai durar
+                player.ShakeElapsedTime = player.ShakeDuration;
             break;
             default:
             break;

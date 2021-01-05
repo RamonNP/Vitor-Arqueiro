@@ -124,7 +124,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 12
+  bundleVersion: 13
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -170,7 +170,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: br.com.arbitrium.game.adventure.va
   buildNumber: {}
-  AndroidBundleVersionCode: 12
+  AndroidBundleVersionCode: 13
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -836,6 +836,7 @@ PlayerSettings:
     Collab: 0
     Game Performance: 0
     Purchasing: 0
+    UNet: 1
     Unity Ads: 1
   luminIcon:
     m_Name: 

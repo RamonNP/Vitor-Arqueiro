@@ -10,6 +10,7 @@ public class GameOverScript : MonoBehaviour
     // Start is called before the first frame update
     public void Menu()
     {
+        gameController.lastCheckpoint.x = 0;
         SceneManager.LoadScene("MenuJairo");
     }
 
