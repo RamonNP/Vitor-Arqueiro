@@ -16830,7 +16830,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5198684, y: 51.31332, z: -10}
+  m_LocalPosition: {x: 4.519864, y: 51.313324, z: -10}
   m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19671,6 +19671,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &655890660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5590800090991820561, guid: cb4bb1799ac78f44ca706bd6b1a5ef7b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5590800091952225893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &663120421
 GameObject:
   m_ObjectHideFlags: 0
@@ -128688,7 +128694,7 @@ MonoBehaviour:
   cameras: {fileID: 1852492892}
   iconeInteracao: {fileID: 0}
   botaoPulo: {fileID: 0}
-  botaoInteracao: {fileID: 0}
+  botaoInteracao: {fileID: 655890660}
   caverna: 0
 --- !u!4 &4849761684412498136
 Transform:
@@ -129112,6 +129118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MoreArrows
+      objectReference: {fileID: 0}
+    - target: {fileID: 5590800090991820561, guid: cb4bb1799ac78f44ca706bd6b1a5ef7b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5590800090991820563, guid: cb4bb1799ac78f44ca706bd6b1a5ef7b,
         type: 3}
@@ -130177,7 +130188,7 @@ MonoBehaviour:
   spawnFlecha: {fileID: 8433027920635790106}
   attacking: 0
   lookLeft: 0
-  fase: 8
+  fase: 7
   TempoFase: 500
   qtdMoedasInt: 0
   qtdMoedas: {fileID: 0}
