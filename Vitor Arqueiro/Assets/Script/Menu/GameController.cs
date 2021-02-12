@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour
     public void FinishGame(int fase)
     {
         //AudioListener.volume = 0;
-        
+        PlayerDao.getInstance().saveString("lego",null);
         fase++;
         Time.timeScale = 1f;
         PlayerPrefs.SetInt("Fase_"+ fase, 1);

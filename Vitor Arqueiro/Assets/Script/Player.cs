@@ -591,6 +591,7 @@ public class Player : MonoBehaviour
     public void MoreArrows(int qtd){
         //print("mais Flexas");
         RewardedAdsScript.getInstance().ShowRewardedVideo();
+        AdMobController.getInstance().RequestRewords();
     }
     public void CallBackmoreArrows(int qtd){
         addFlexa(qtd);

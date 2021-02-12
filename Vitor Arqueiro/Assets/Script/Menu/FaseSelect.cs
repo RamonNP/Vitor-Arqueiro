@@ -65,10 +65,19 @@ public class FaseSelect : MonoBehaviour
     }
     public void GoToScene(string Scena)
     {
+        PlayerDao.getInstance().saveString("lego",null);
+        //salva a fase atual em numero, exemplo em fase_1 deixa apenas 1
+        PlayerDao.getInstance().saveInt("faseAtual", StringToNullableInt(Scena.Substring(Scena.Length-2, 2)));
+        StartCoroutine(LoadScreen("Fase_D"));
         if (fases.Contains(Scena))
         {
             StartCoroutine(LoadScreen(Scena));
         }
+    }
+    public static int StringToNullableInt(string strNum)
+    {
+        int outInt;
+        return int.TryParse(strNum, out outInt) ? outInt : (int)0;
     }
     private void OpenLevel(string level)
     {
@@ -129,6 +138,7 @@ public class FaseSelect : MonoBehaviour
 
     IEnumerator LoadScreen(string scena)
     {
+        Debug.Log("scena" +scena);
         if(async == null )
         {
             slider.gameObject.SetActive(true);

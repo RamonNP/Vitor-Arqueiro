@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FaseController : MonoBehaviour
+public class FaseControllerV2 : MonoBehaviour
 {
     public int stageSize;
 
@@ -10,6 +10,7 @@ public class FaseController : MonoBehaviour
     public GameObject middle;
     public GameObject endPhase;
     public GameObject[] parts;
+    public GameObject[] moedasPrefab;
     public Dictionary<int, GameObject> lego;
 
     // Start is called before the first frame update
@@ -20,6 +21,9 @@ public class FaseController : MonoBehaviour
         this.gameObject.transform.position = new Vector3(100,100,0);
         lego = new Dictionary<int, GameObject>();
         montarLego();
+        int index = PlayerDao.getInstance().loadInt("faseAtual");
+        GameObject obj = moedasPrefab[index];
+        Instantiate (obj, new Vector3(-28f, 50, 0), startPhase.transform.localRotation);
         //Debug.Log("DEPOIS LEGO");            
         StartCoroutine ("animacaoMorrer");
     }

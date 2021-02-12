@@ -43,7 +43,7 @@
   </files>
   <settings>
     <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
-    <setting name="bundleId" value="br.com.rad.jairo.unity" />
+    <setting name="bundleId" value="br.com.arbitrium.game.adventure.va" />
     <setting name="explodeAars" value="True" />
     <setting name="gradleBuildEnabled" value="True" />
     <setting name="gradleTemplateEnabled" value="False" />
