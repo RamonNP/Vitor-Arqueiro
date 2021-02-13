@@ -21,6 +21,7 @@ public class FaseControllerV2 : MonoBehaviour
         this.gameObject.transform.position = new Vector3(100,100,0);
         lego = new Dictionary<int, GameObject>();
         montarLego();
+        //monta as moedas que vão aparecer conforme a fase
         int index = PlayerDao.getInstance().loadInt("faseAtual");
         GameObject obj = moedasPrefab[index];
         Instantiate (obj, new Vector3(-28f, 50, 0), startPhase.transform.localRotation);
@@ -52,15 +53,18 @@ public class FaseControllerV2 : MonoBehaviour
         startPhase.SetActive(true);
         for (int i = 0; i < legoBanco.Length; i++)
         {
-            // adiciona a nova peça ao lego para controlle
-            lego.Add(StringToNullableInt(legoBanco[i]), parts[StringToNullableInt(legoBanco[i])]);
-            GameObject obj = parts[StringToNullableInt(legoBanco[i])];
-            //intancia o objeto
-            Instantiate (obj, getPosition(i), startPhase.transform.localRotation);
-            //coloca o Objeto na posição correta
-            obj.gameObject.transform.position = getPosition(i);
-            //obj.SetActive(true);
-            //Debug.Log(getPosition(i)+ "Name - " +obj.gameObject.name);
+            print(legoBanco[i]);
+            if(legoBanco[i] != ""){
+                // adiciona a nova peça ao lego para controlle
+                lego.Add(StringToNullableInt(legoBanco[i]), parts[StringToNullableInt(legoBanco[i])]);
+                GameObject obj = parts[StringToNullableInt(legoBanco[i])];
+                //intancia o objeto
+                Instantiate (obj, getPosition(i+1), startPhase.transform.localRotation);
+                //coloca o Objeto na posição correta
+                obj.gameObject.transform.position = getPosition(i);
+                //obj.SetActive(true);
+                //Debug.Log(getPosition(i)+ "Name - " +obj.gameObject.name);
+            }
         }
         endPhase.gameObject.transform.position = getPosition(stageSize);
         endPhase.SetActive(true);
