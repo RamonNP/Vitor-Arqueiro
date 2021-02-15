@@ -48,15 +48,17 @@ public class FaseController : MonoBehaviour
         startPhase.SetActive(true);
         for (int i = 0; i < legoBanco.Length; i++)
         {
-            // adiciona a nova peça ao lego para controlle
-            lego.Add(StringToNullableInt(legoBanco[i]), parts[StringToNullableInt(legoBanco[i])]);
-            GameObject obj = parts[StringToNullableInt(legoBanco[i])];
-            //intancia o objeto
-            Instantiate (obj, getPosition(i), startPhase.transform.localRotation);
-            //coloca o Objeto na posição correta
-            obj.gameObject.transform.position = getPosition(i);
-            //obj.SetActive(true);
-            //Debug.Log(getPosition(i)+ "Name - " +obj.gameObject.name);
+            if(legoBanco[i] != ""){
+                // adiciona a nova peça ao lego para controlle
+                lego.Add(StringToNullableInt(legoBanco[i]), parts[StringToNullableInt(legoBanco[i])]);
+                GameObject obj = parts[StringToNullableInt(legoBanco[i])];
+                //intancia o objeto
+                Instantiate (obj, getPosition(i+1), startPhase.transform.localRotation);
+                //coloca o Objeto na posição correta
+                obj.gameObject.transform.position = getPosition(i);
+                //obj.SetActive(true);
+                //Debug.Log(getPosition(i)+ "Name - " +obj.gameObject.name);
+            }
         }
         endPhase.gameObject.transform.position = getPosition(stageSize);
         endPhase.SetActive(true);

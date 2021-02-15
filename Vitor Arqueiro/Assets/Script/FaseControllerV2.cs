@@ -53,7 +53,6 @@ public class FaseControllerV2 : MonoBehaviour
         startPhase.SetActive(true);
         for (int i = 0; i < legoBanco.Length; i++)
         {
-            print(legoBanco[i]);
             if(legoBanco[i] != ""){
                 // adiciona a nova peça ao lego para controlle
                 lego.Add(StringToNullableInt(legoBanco[i]), parts[StringToNullableInt(legoBanco[i])]);

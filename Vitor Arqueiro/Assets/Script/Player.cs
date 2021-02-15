@@ -484,6 +484,7 @@ public class Player : MonoBehaviour
                     //collision.gameObject.SendMessage("loot", SendMessageOptions.DontRequireReceiver);
                     //collision.gameObject.SetActive(false);
                     Destroy(collision.gameObject);
+                    print("DESTROINDO");
                     Instantiate(gameController.explosion2, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
                     //collision.gameObject.GetComponent<Animator>().SetTrigger("explosion2");
                 }

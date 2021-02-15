@@ -35,6 +35,8 @@ public class FaseSelect : MonoBehaviour
     public GameObject lock_9;
     public GameObject fase_10;
     public GameObject lock_10;
+    public GameObject fase_11;
+    public GameObject lock_11;
 
     private List<String> fases = new List<string>();
 
@@ -67,11 +69,20 @@ public class FaseSelect : MonoBehaviour
     {
         PlayerDao.getInstance().saveString("lego",null);
         //salva a fase atual em numero, exemplo em fase_1 deixa apenas 1
-        PlayerDao.getInstance().saveInt("faseAtual", StringToNullableInt(Scena.Substring(Scena.Length-2, 2)));
+        //int faseAtual = StringToNullableInt(Scena.Substring(Scena.Length-2, 2));
+        //FAKE
+        int faseAtual = 20;
         StartCoroutine(LoadScreen("Fase_D"));
-        if (fases.Contains(Scena))
+        //FAKE
+        PlayerDao.getInstance().saveInt("faseAtual", faseAtual);
+        print("Scena" + Scena +" faseAtual"+faseAtual);
+        if (fases.Contains("Fase_"+faseAtual))
         {
-            StartCoroutine(LoadScreen(Scena));
+            if(faseAtual > 10){
+                StartCoroutine(LoadScreen("Fase_D"));
+            } else {
+                StartCoroutine(LoadScreen("Fase_"+faseAtual));
+            }
         }
     }
     public static int StringToNullableInt(string strNum)
@@ -130,6 +141,10 @@ public class FaseSelect : MonoBehaviour
                 lock_10.SetActive(false);
                 break;
             case "Fase_11":
+                fase_11.SetActive(true);
+                lock_11.SetActive(false);
+                break;
+            case "Fase_12":
                 fase_4.SetActive(true);
                 lock_4.SetActive(false);
                 break;

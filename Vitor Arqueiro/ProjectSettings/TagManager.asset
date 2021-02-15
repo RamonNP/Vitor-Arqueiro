@@ -38,7 +38,7 @@ TagManager:
   - 6
   - 7
   - 8
-  - 
+  - ARMADILHA
   - Camera
   - ObjInteracao
   - InmigoMorto
@@ -79,14 +79,14 @@ TagManager:
   - name: Loot
     uniqueID: 2832424115
     locked: 0
+  - name: DecoracaoFrente
+    uniqueID: 3764377943
+    locked: 0
   - name: Player
     uniqueID: 165201671
     locked: 0
   - name: Inimigos
     uniqueID: 2973411389
-    locked: 0
-  - name: DecoracaoFrente
-    uniqueID: 3764377943
     locked: 0
   - name: HUD
     uniqueID: 4111603769

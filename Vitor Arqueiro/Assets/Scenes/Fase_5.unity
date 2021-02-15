@@ -5673,7 +5673,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.7199497, y: 51.309334, z: -10}
+  m_LocalPosition: {x: 6.7199492, y: 51.309334, z: -10}
   m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -66047,7 +66047,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 481f76e4385f9794e90944d0f7cfa2f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66097,7 +66097,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fae0ed8f5ed6eee4d8c20a570a6fcb9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66147,7 +66147,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3c41690293af46f4680cadfe2b685eb5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66197,7 +66197,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5bf02fd3094e3824ca526bdb934f6079, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66247,7 +66247,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b477555d5839dc0469961eb9ef3ba06f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66297,7 +66297,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1f613688bd7ca8d4791833ec353dedc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66347,7 +66347,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7e39687a7aef39641845698015110aa4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66397,7 +66397,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3365e0380ebefb84a92319a27fe51df9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66447,7 +66447,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3399fcdf617c0214e988cf340b0a73db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66497,7 +66497,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: deaccf5eba2673c44b6a10e41b4897ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -66547,7 +66547,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 165201671
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 70acc10456121494d8185f8c3fe41ca1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -66658,9 +66658,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loot: {fileID: 5321319644930672605, guid: e054f53a036b85d46a5fc19c6b06547d, type: 3}
-  healt: 10
+  healt: 30
   distanceAttack: 4
-  speed: 3
+  speed: 2
   rb2d: {fileID: 0}
   cld2d: {fileID: 0}
   saida: {fileID: 0}
