@@ -4,11 +4,27 @@ using UnityEngine;
 
 public class Boss : BossController
 {
+
+    private float percVida;
     // Start is called before the first frame update
     public bool isFlip;
     void Start()
     {
+        print("RESET VIDA");
+        barrasVida.SetActive(false);
+        healt = healtMax;
+        hpBar.localScale = new Vector3(1,1,1);
         
+        if(olhandoAEsquerda == false){
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            //transform.localScale = theScale;
+            float x = (theScale.x/2) ;
+            barrasVida.transform.localScale = new Vector3(x ,barrasVida.transform.localScale.y,barrasVida.transform.localScale.z);
+        } else {
+            float x = (transform.localScale.x/2) ;
+            barrasVida.transform.localScale = new Vector3(x,barrasVida.transform.localScale.y,barrasVida.transform.localScale.z);
+        }
     }
 
     // Update is called once per frame
@@ -65,6 +81,12 @@ public class Boss : BossController
     public IEnumerator Dano()
     {
         if(healt > 1) {
+            percVida = (float)healt / (float)healtMax;
+            barrasVida.SetActive(true);
+            if(percVida < 0) {
+                percVida = 0;
+            } 
+            hpBar.localScale = new Vector3(percVida,1,1);
             isAtaking = true;
             healt--;
             anim.SetTrigger("hurt");

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 200423196736841953}
   - component: {fileID: 2025014905723128461}
   - component: {fileID: 3074730342549991200}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (2)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 3157971821319073510}
   - component: {fileID: 2285272637190511011}
   - component: {fileID: 4305010319534259228}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (10)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -840,7 +840,7 @@ GameObject:
   - component: {fileID: 8217006056579346249}
   - component: {fileID: 7969523260623010472}
   - component: {fileID: 6179368488062694512}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (11)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -1317,7 +1317,7 @@ GameObject:
   - component: {fileID: 1739625800638272438}
   - component: {fileID: 1739625800638272436}
   - component: {fileID: 1739625800638272439}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (1)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -1336,7 +1336,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 5850359621314580608}
-  m_RootOrder: 2
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1739625800638272440
 SpriteRenderer:
@@ -2932,7 +2932,7 @@ GameObject:
   - component: {fileID: 8075139667147049520}
   - component: {fileID: 2707463193337226398}
   - component: {fileID: 932093742410111798}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (7)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -3209,7 +3209,7 @@ GameObject:
   - component: {fileID: 4258988121514844026}
   - component: {fileID: 7316798969523276352}
   - component: {fileID: 7182757011836170162}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (13)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -3991,7 +3991,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 5850359621314580608}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5306754581933892933
 SpriteRenderer:
@@ -4114,7 +4114,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 5850359621314580608}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5306754582083126828
 SpriteRenderer:
@@ -4237,7 +4237,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 5850359621314580608}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5306754582141641964
 SpriteRenderer:
@@ -4360,7 +4360,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 5850359621314580608}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5306754582213836897
 SpriteRenderer:
@@ -4729,7 +4729,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 5850359621314580608}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5403687711627266840
 SpriteRenderer:
@@ -5457,7 +5457,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 5850359621314580608}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5403687712757916488
 SpriteRenderer:
@@ -5742,7 +5742,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 5850359621314580608}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5403687713613269022
 SpriteRenderer:
@@ -5847,7 +5847,7 @@ GameObject:
   - component: {fileID: 3964451543222020299}
   - component: {fileID: 728973103820260583}
   - component: {fileID: 7777661186189248802}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (5)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -5996,7 +5996,7 @@ GameObject:
   - component: {fileID: 9119307760537149919}
   - component: {fileID: 8160280197450412491}
   - component: {fileID: 5259506981887646754}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (8)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -7791,7 +7791,6 @@ Transform:
   m_Children:
   - {fileID: 5306754583045982153}
   - {fileID: 5306754583351080126}
-  - {fileID: 1739625800638272441}
   - {fileID: 5306754582213836896}
   - {fileID: 5306754582083126829}
   - {fileID: 5306754581933892932}
@@ -7799,6 +7798,7 @@ Transform:
   - {fileID: 5403687713613269011}
   - {fileID: 5403687711627266845}
   - {fileID: 5403687712757916493}
+  - {fileID: 1739625800638272441}
   - {fileID: 2556839031708293149}
   - {fileID: 8421614957780198324}
   - {fileID: 4170591352368560357}
@@ -9670,7 +9670,7 @@ GameObject:
   - component: {fileID: 7619994391135951050}
   - component: {fileID: 3528224552812790016}
   - component: {fileID: 169079430939975313}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (12)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -10334,7 +10334,7 @@ GameObject:
   - component: {fileID: 3701747552277270551}
   - component: {fileID: 4119171044296181876}
   - component: {fileID: 6499411973399349176}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (4)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -10611,7 +10611,7 @@ GameObject:
   - component: {fileID: 3627810431670767841}
   - component: {fileID: 9034225180619755989}
   - component: {fileID: 4721592123095683468}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (3)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -11140,7 +11140,7 @@ GameObject:
   - component: {fileID: 2777179519283552332}
   - component: {fileID: 908839806218930938}
   - component: {fileID: 9016857257208557710}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (9)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -11686,7 +11686,7 @@ GameObject:
   - component: {fileID: 8861386361184789493}
   - component: {fileID: 939358957467827500}
   - component: {fileID: 396398918912194425}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (14)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -11950,90 +11950,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0564055, y: 1.1252038}
   m_EdgeRadius: 0
---- !u!50 &5781683769988249046
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8118826426837079722}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &4361286370347888531
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8118826426837079722}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0965004, y: 1.1297374}
-  m_Size: {x: 1.3413892, y: 1.9739752}
-  m_Direction: 0
---- !u!61 &5332095608188506891
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8118826426837079722}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.051506996, y: 2.288917}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.5039845, y: 0.3426857}
-  m_EdgeRadius: 0
---- !u!114 &8310111331093781006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8118826426837079722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b701e9b37cae14a8681e534de4ca85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loot: {fileID: 5321319644930672605, guid: e054f53a036b85d46a5fc19c6b06547d, type: 3}
-  healt: 40
-  distanceAttack: 4
-  speed: 3
-  rb2d: {fileID: 0}
-  cld2d: {fileID: 0}
-  saida: {fileID: 0}
-  scaleToFlip: {fileID: 0}
-  isFlip: 0
 --- !u!1 &8171929916945766515
 GameObject:
   m_ObjectHideFlags: 0
@@ -12841,7 +12757,7 @@ GameObject:
   - component: {fileID: 8312845836025952511}
   - component: {fileID: 6329452550186965757}
   - component: {fileID: 2781905743994354212}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: QuestionBlockNoite (6)
   m_TagString: QuestionBlock
   m_Icon: {fileID: 0}
@@ -13325,30 +13241,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3099941423768202382}
     m_Modifications:
-    - target: {fileID: 245585543475381700, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 275421177478965909, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -19.964146
-      objectReference: {fileID: 0}
     - target: {fileID: 1017576359264709392, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1017576359264709392, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1017576359264709392, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1017576359264709392, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
         type: 3}
@@ -13358,7 +13254,7 @@ PrefabInstance:
     - target: {fileID: 1017576359264709392, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: -7.09
       objectReference: {fileID: 0}
     - target: {fileID: 1017576359264709392, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
         type: 3}
@@ -13400,112 +13296,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1041390733584878797, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1653441722406159152, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1673527291479582138, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2323956494388998462, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3055525762206891706, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3132803454443150197, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 3506223508626300383, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
         type: 3}
       propertyPath: m_Name
       value: 03
       objectReference: {fileID: 0}
-    - target: {fileID: 3506223508626300383, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
+    - target: {fileID: 8237610331802239948, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
         type: 3}
-      propertyPath: m_Layer
-      value: 10
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 3506223508626300383, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
+    - target: {fileID: 8237610331802239948, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
         type: 3}
-      propertyPath: m_TagString
-      value: Chefe
+      propertyPath: m_LocalPosition.x
+      value: -4.66
       objectReference: {fileID: 0}
-    - target: {fileID: 4090644079803137749, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
+    - target: {fileID: 8310111331093781006, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
         type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4164344828020472120, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4931913383239913771, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -93.25604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5946039887100840906, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -36.556786
-      objectReference: {fileID: 0}
-    - target: {fileID: 5976059177327472824, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6643868850887472712, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7365420821510490596, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7737350265150649697, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 42.269146
-      objectReference: {fileID: 0}
-    - target: {fileID: 7941553729941949998, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -87.963585
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137527000141922363, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
+      propertyPath: olhandoAEsquerda
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770e831d4bf2c6e4d9b1badae2bc89ea, type: 3}
 --- !u!4 &5628495011485589605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1017576359264709392, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 4612607593358478197}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8118826426837079722 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3506223508626300383, guid: 770e831d4bf2c6e4d9b1badae2bc89ea,
     type: 3}
   m_PrefabInstance: {fileID: 4612607593358478197}
   m_PrefabAsset: {fileID: 0}

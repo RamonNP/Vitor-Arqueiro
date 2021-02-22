@@ -37,30 +37,35 @@ public class FaseSelect : MonoBehaviour
     public GameObject lock_10;
     public GameObject fase_11;
     public GameObject lock_11;
+    public GameObject fase_12;
+    public GameObject lock_12;
+    public GameObject fase_13;
+    public GameObject lock_13;
+    public GameObject fase_14;
+    public GameObject lock_14;
+    public GameObject fase_15;
+    public GameObject lock_15;
+    public GameObject fase_16;
+    public GameObject lock_16;
+    public GameObject fase_17;
+    public GameObject lock_17;
+    public GameObject fase_18;
+    public GameObject lock_18;
+    public GameObject fase_19;
+    public GameObject lock_19;
+    public GameObject fase_20;
+    public GameObject lock_20;
 
     private List<String> fases = new List<string>();
 
     void Start()
     {
-        //reset fases
-        /*
-        for (var i = 0; i < 20; i++)
-        {
-            PlayerPrefs.SetInt("Fase_"+ i, 0);
-        } */
-
-
-
-        //Music.GetComponent<AudioSource>().Play();
-        //LoadScreen("Fase_1");
         fases.Add("Fase_1");
         for (int i = 0; i < maxFase; i++)
         {
             string fase = "Fase_" + i;
-            //Debug.Log(fase);
             if (PlayerPrefs.GetInt(fase) == 1)
             {
-                //Debug.Log(fase+"Achou");
                 OpenLevel("Fase_" + i);
             }
         }
@@ -69,10 +74,10 @@ public class FaseSelect : MonoBehaviour
     {
         PlayerDao.getInstance().saveString("lego",null);
         //salva a fase atual em numero, exemplo em fase_1 deixa apenas 1
-        //int faseAtual = StringToNullableInt(Scena.Substring(Scena.Length-2, 2));
+        int faseAtual = StringToNullableInt(Scena.Substring(Scena.Length-2, 2));
         //FAKE
-        int faseAtual = 20;
-        StartCoroutine(LoadScreen("Fase_D"));
+        //faseAtual = 20;
+        //StartCoroutine(LoadScreen("Fase_D"));
         //FAKE
         PlayerDao.getInstance().saveInt("faseAtual", faseAtual);
         print("Scena" + Scena +" faseAtual"+faseAtual);
@@ -92,7 +97,6 @@ public class FaseSelect : MonoBehaviour
     }
     private void OpenLevel(string level)
     {
-        //Debug.Log(level);
         fases.Add(level);
         switch (level)
         {
@@ -100,7 +104,6 @@ public class FaseSelect : MonoBehaviour
                 fase_1.SetActive(true);
                 lock_1.SetActive(false);
                 break;
-           
             case "Fase_2":
                 fase_2.SetActive(true);
                 lock_2.SetActive(false);
@@ -134,9 +137,6 @@ public class FaseSelect : MonoBehaviour
                 lock_9.SetActive(false);
                 break;
             case "Fase_10":
-                //Debug.Log(fase_10.transform.position.x);
-                //Debug.Log(fase_10.transform.position.y);
-                //fase_10.transform.position.x;
                 fase_10.SetActive(true);
                 lock_10.SetActive(false);
                 break;
@@ -145,8 +145,40 @@ public class FaseSelect : MonoBehaviour
                 lock_11.SetActive(false);
                 break;
             case "Fase_12":
-                fase_4.SetActive(true);
-                lock_4.SetActive(false);
+                fase_12.SetActive(true);
+                lock_12.SetActive(false);
+                break;
+            case "Fase_13":
+                fase_13.SetActive(true);
+                lock_13.SetActive(false);
+                break;
+            case "Fase_14":
+                fase_14.SetActive(true);
+                lock_14.SetActive(false);
+                break;
+            case "Fase_15":
+                fase_15.SetActive(true);
+                lock_15.SetActive(false);
+                break;
+            case "Fase_16":
+                fase_16.SetActive(true);
+                lock_16.SetActive(false);
+                break;
+            case "Fase_17":
+                fase_17.SetActive(true);
+                lock_17.SetActive(false);
+                break;
+            case "Fase_18":
+                fase_18.SetActive(true);
+                lock_18.SetActive(false);
+                break;
+            case "Fase_19":
+                fase_19.SetActive(true);
+                lock_19.SetActive(false);
+                break;
+            case "Fase_20":
+                fase_20.SetActive(true);
+                lock_20.SetActive(false);
                 break;
         }
     }

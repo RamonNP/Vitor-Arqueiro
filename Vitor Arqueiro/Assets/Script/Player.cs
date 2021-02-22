@@ -86,14 +86,21 @@ public class Player : MonoBehaviour
 
     private GameController gameController;
     public float movimento;
+    public Text qtdMoedasIAP;
+    public Text QtdFlechasIAP;
+    public Text preco2000Moedas;
+    public Text preco10000Moedas;
+    private bool morto;
     void Start()
     {
+        morto = false;
         starFase1 = GameObject.Find("Star1");
         starFase2 = GameObject.Find("Star2");
         starFase3 = GameObject.Find("Star3");
 
         qtdFlexa = GameObject.Find("QtdFlecha").GetComponent<Text>();
         qtdMoedas = GameObject.Find("QtdMoedas").GetComponent<Text>();
+        
 
         time = GameObject.Find("Time").GetComponent<Text>();
         audioController = FindObjectOfType(typeof(AudioController)) as AudioController;
@@ -104,7 +111,7 @@ public class Player : MonoBehaviour
         //Screen.orientation = ScreenOrientation.LandscapeLeft;
 
         loadStars();
-        //PlayerPrefs.SetInt("notaFinal" + idTema.ToString(), (int) notaFinal);
+        //PlayerDao.getInstance().saveInt("notaFinal" + idTema.ToString(), (int) notaFinal);
         //idTema = PlayerPrefs.GetInt("idTema");
         qtdMoedasInt = PlayerPrefs.GetInt("coins");
         qtdMoedas.text = qtdMoedasInt.ToString().PadLeft(4, '0');
@@ -130,9 +137,21 @@ public class Player : MonoBehaviour
         if (VirtualCamera != null){
             virtualCameraNoise = VirtualCamera.GetCinemachineComponent<Cinemachine.CinemachineBasicMultiChannelPerlin>(); 
         }
+        fase =  PlayerDao.getInstance().loadInt("faseAtual");
         
     }
-
+    public bool estaMorto() {
+        return morto;
+    }
+    public void carregarQtdMoedasIAP() { 
+        IAPController.instancia.inicializaPrecos();
+        qtdMoedasInt = PlayerDao.getInstance().loadInt("coins");
+        qtdMoedasIAP.text = qtdMoedasInt.ToString().PadLeft(4, '0');
+        quantidadeFlechas = PlayerDao.getInstance().loadInt("arrow");
+        QtdFlechasIAP.text = quantidadeFlechas.ToString().PadLeft(4, '0');
+        preco2000Moedas.text = IAPController.instancia.preco2000Moedas;
+        preco10000Moedas.text = IAPController.instancia.preco10000Moedas;
+    }
     public void cameraShake() {
          // If the Cinemachine componet is not set, avoid update
         if (VirtualCamera != null && virtualCameraNoise != null)
@@ -242,6 +261,55 @@ public class Player : MonoBehaviour
        
     }
 
+    public void comprar(string qtd) {
+        qtdMoedasInt = PlayerDao.getInstance().loadInt("coins");
+        int novasQtdMoedas = qtdMoedasInt;
+        print("COMPRA "+qtd);
+        switch (qtd)
+        {
+            case "10":
+                if(qtdMoedasInt > 200){
+                    novasQtdMoedas = novasQtdMoedas-200;
+                    addFlexa(10);
+                }
+                break;
+            case "50":
+                if(qtdMoedasInt > 1000){
+                    novasQtdMoedas = novasQtdMoedas-1000;
+                    addFlexa(50);
+                }
+                break;
+            case "100":
+                if(qtdMoedasInt > 2000){
+                    novasQtdMoedas = novasQtdMoedas-2000;
+                    addFlexa(100);
+                }
+                break;
+            case "2000moedas":
+                if(IAPController.instancia.CompraProduto(qtd)){
+                    //addCoinsQtd(2000);
+                    //novasQtdMoedas = novasQtdMoedas+2000;
+                }
+                break;
+            case "10000moedas":
+                if(IAPController.instancia.CompraProduto(qtd)){
+                    //addCoinsQtd(10000);
+                    //novasQtdMoedas = novasQtdMoedas+10000;
+                }
+                break;
+            default:
+                break;
+        }
+        //Atualia a quantidade de flechas do panel compras IAP
+        quantidadeFlechas = PlayerDao.getInstance().loadInt("arrow");
+        QtdFlechasIAP.text = quantidadeFlechas.ToString().PadLeft(4, '0');
+        //grava as moedas no banco
+        PlayerDao.getInstance().saveInt("coins",novasQtdMoedas);
+        //atualiza HUD de quantidade de moedas apos a compra
+        qtdMoedas.text = novasQtdMoedas.ToString().PadLeft(4, '0');
+        //atualiza as moedas do painel apos a compra
+        qtdMoedasIAP.text = novasQtdMoedas.ToString().PadLeft(4, '0');
+    }
     private void Flip()
     {
         Vector3 theScale = transform.localScale;
@@ -405,13 +473,13 @@ public class Player : MonoBehaviour
     {
         quantidadeFlechas -= qtd;
         qtdFlexa.text = quantidadeFlechas.ToString().PadLeft(4, '0');
-        PlayerPrefs.SetInt("arrow", quantidadeFlechas);
+        PlayerDao.getInstance().saveInt("arrow", quantidadeFlechas);
     }
     private void addFlexa(int qtd)
     {
         quantidadeFlechas += qtd;
         qtdFlexa.text = quantidadeFlechas.ToString().PadLeft(4, '0');
-        PlayerPrefs.SetInt("arrow", quantidadeFlechas);
+        PlayerDao.getInstance().saveInt("arrow", quantidadeFlechas);
     }
     private IEnumerator EsperarNovoAtaque ()
     {
@@ -449,7 +517,15 @@ public class Player : MonoBehaviour
     {
         qtdMoedasInt += 1;
         qtdMoedas.text = qtdMoedasInt.ToString().PadLeft(4, '0');
-        PlayerPrefs.SetInt("coins", qtdMoedasInt);
+        PlayerDao.getInstance().saveInt("coins", qtdMoedasInt);
+    }
+    public void addCoinsQtd(int qtd)
+    {
+        qtdMoedasInt += qtd;
+        qtdMoedas.text = qtdMoedasInt.ToString().PadLeft(4, '0');
+        PlayerDao.getInstance().saveInt("coins", qtdMoedasInt);
+        //atualiza as moedas do painel apos a compra
+        qtdMoedasIAP.text = qtdMoedasInt.ToString().PadLeft(4, '0');
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -585,8 +661,10 @@ public class Player : MonoBehaviour
 
     void GameOver()
     {
+        morto = true;
         timeFloat = 0;
         Morrer();
+        AdMobController.getInstance().ShowInterstitial();
 
     }
     public void MoreArrows(int qtd){
@@ -665,22 +743,22 @@ public class Player : MonoBehaviour
     }
     void SaveStars()
     {
-        //PlayerPrefs.SetInt("notaFinal" + idTema.ToString(), (int) notaFinal);
+        //PlayerDao.getInstance().saveInt("notaFinal" + idTema.ToString(), (int) notaFinal);
         //idTema = PlayerPrefs.GetInt("idTema");
         //salva estrelas
         //Debug.Log(starFase3.GetComponent<StarFase>().Ativo);
         if (starFase1 != null && starFase1.GetComponent<StarFase>().Ativo)
         {
             
-            PlayerPrefs.SetInt("star"+ fase+"_1",1);
+            PlayerDao.getInstance().saveInt("star"+ fase+"_1",1);
         }
         if (starFase2 != null && starFase2.GetComponent<StarFase>().Ativo)
         {
-            PlayerPrefs.SetInt("star" + fase + "_2", 1);
+            PlayerDao.getInstance().saveInt("star" + fase + "_2", 1);
         }
         if (starFase3 != null && starFase3.GetComponent<StarFase>().Ativo)
         {
-            PlayerPrefs.SetInt("star" + fase + "_3", 1);
+            PlayerDao.getInstance().saveInt("star" + fase + "_3", 1);
         }
     }
     void loadStars()

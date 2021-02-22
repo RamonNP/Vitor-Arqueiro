@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using GoogleMobileAds.Api;
 
 public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
 {
@@ -27,6 +28,8 @@ public class RewardedAdsScript : MonoBehaviour, IUnityAdsListener
         Advertisement.AddListener (this);
         Advertisement.Initialize (gameId, testMode);
     }
+
+    
 
     IEnumerator ShowBannerWhenReady () {
         while (!Advertisement.IsReady (bannerPlacementId)) {

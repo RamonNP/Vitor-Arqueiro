@@ -65,7 +65,7 @@
         "MemoryGroup": 2,
         "Behavior": 0
     },
-    "m_Filter": "unity",
+    "m_Filter": "",
     "m_FilterIsRegularExpression": false,
     "m_SymbolPaths": []
 }

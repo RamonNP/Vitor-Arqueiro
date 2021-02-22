@@ -2,19 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
+using System;
 
 public class AdMobController : MonoBehaviour
 {
+    public int qtdMorte;
     private Player player; 
     private RewardedAd rewardedAd;
     private BannerView bannerView;
     public static AdMobController instance;
+    private InterstitialAd interstitial;
     public static AdMobController getInstance() {
+        return instance;
+    }
+    void Awake() {
         if(instance == null)
         {
-            instance = GameObject.FindObjectOfType<AdMobController>();
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else if(instance != null) {
+            Destroy(gameObject);
         }
-        return instance;
     }
     // Start is called before the first frame update
     void Start()
@@ -22,17 +30,10 @@ public class AdMobController : MonoBehaviour
         player = GameObject.FindObjectOfType<Player>();
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize(initStatus => { });
+        RequestInterstitial();
 
-        //this.RequestBanner();
-
-         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void RequestRewords(){
         string adUnitId;
         #if UNITY_ANDROID
@@ -65,20 +66,13 @@ public class AdMobController : MonoBehaviour
     }
     public void RequestBanner()
     {
-        #if UNITY_ANDROID
-            //string adUnitId = "ca-app-pub-2409485950941966/3383585314";
-            string adUnitId = "ca-app-pub-3940256099942544/5224354917";//Teste
-        #elif UNITY_IPHONE
-            string adUnitId = "ca-app-pub-3940256099942544/2934735716";
-        #else
-            string adUnitId = "unexpected_platform";
-        #endif
+        string adUnitId = "ca-app-pub-2409485950941966/3383585314";
+        //string adUnitId = "ca-app-pub-3940256099942544/5224354917";//Teste
 
         // Create a 320x50 banner at the top of the screen.
         this.bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Top);
         // Create an empty ad request.
         AdRequest request = new AdRequest.Builder().Build();
-
         // Load the banner with the request.
         bannerView.LoadAd(request);
         Invoke("DestroyBanner", 30f);
@@ -125,4 +119,25 @@ public class AdMobController : MonoBehaviour
             "HandleRewardedAdRewarded event received for "
                         + amount.ToString() + " " + type);
     }
+
+    public void ShowInterstitial() {
+        qtdMorte++;
+        if (this.interstitial.IsLoaded() && qtdMorte >= 2) {
+            qtdMorte = 0;
+            this.interstitial.Show();
+        }
+    }
+    private void RequestInterstitial()
+    {
+        string adUnitId = "ca-app-pub-2409485950941966/8811165646";
+
+        // Initialize an InterstitialAd.
+        this.interstitial = new InterstitialAd(adUnitId);
+
+         // Create an empty ad request.
+        AdRequest request = new AdRequest.Builder().Build();
+        // Load the interstitial with the request.
+        this.interstitial.LoadAd(request);
+    }
+
 }
