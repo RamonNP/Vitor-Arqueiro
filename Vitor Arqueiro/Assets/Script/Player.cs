@@ -250,12 +250,12 @@ public class Player : MonoBehaviour
             {
                 PlayerPrefs.DeleteAll();
             }
-            if (Input.GetKeyDown(KeyCode.Tab) && Time.time > nextFire)
+            /*if (Input.GetKeyDown(KeyCode.Tab) && Time.time > nextFire)
             {
 
                 Fire();
-
-            }
+ 
+            } */
             animator.SetFloat("speedY", GetComponent<Rigidbody2D>().velocity.y);
         }
        
