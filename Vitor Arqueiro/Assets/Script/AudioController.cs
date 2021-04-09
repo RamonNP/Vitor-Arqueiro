@@ -38,6 +38,20 @@ public class AudioController : MonoBehaviour
     private string novaCena;
     private bool trocarCena;
 
+    public static AudioController instance;
+    public static AudioController getInstance() {
+        return instance;
+    }
+    void Awake() {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else if(instance != null) {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -52,8 +66,7 @@ public class AudioController : MonoBehaviour
         //CARREGA AS CONFIGURAÇÕES DE AUDIO DO APARELHO
         volumeMaximoMusica = PlayerPrefs.GetFloat("volumeMaximoMusica");
         volumeMaximoFx = PlayerPrefs.GetFloat("volumeMaximoFx");
-
-        trocarMusica(musicaTitulo, "MenuJairo", true);
+                
     }
 
     public void trocarMusica(AudioClip clip, string nomeCena, bool mudarCena)
@@ -118,4 +131,8 @@ public class AudioController : MonoBehaviour
         sFx.volume = tempVolume;
         sFx.PlayOneShot(fx);
     }
+    public void BtnMenu() {
+        trocarMusica(musicaTitulo, "MenuJairo", true);
+    }
+   
 }

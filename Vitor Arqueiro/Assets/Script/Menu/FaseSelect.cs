@@ -203,4 +203,7 @@ public class FaseSelect : MonoBehaviour
 
         }
     }
+     public void BtnPreMenu() {
+        SceneManager.LoadSceneAsync("PreMenu");
+    }
 }
