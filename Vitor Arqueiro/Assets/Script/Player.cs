@@ -537,7 +537,7 @@ public class Player : MonoBehaviour
                 //Debug.Log("Arrow");
                 audioController.tocarFx(audioController.fxBow, 1);
                 Destroy(collision.gameObject);
-                addFlexa(1);
+                addFlexa(10);
                 break;
             case "Chefe":
                 if(!jump) {
